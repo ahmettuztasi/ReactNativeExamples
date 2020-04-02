@@ -10,7 +10,7 @@ export default function StyleSheetExample() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.boldText}>Style Sheet Example</Text>
+        <Text style={styles.boldText}>******STYLE SHEET EXAMPLE*******</Text>
       </View>
       <View style={styles.body}>
         <Text style={styles.boldText}>Lorem ipsum</Text>
