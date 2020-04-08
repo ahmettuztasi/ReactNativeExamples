@@ -7,10 +7,12 @@ import {
   View,
 } from 'react-native';
 
-export default function App() {
+export default function App({ data1, data2 }) {
   return (
     <View style={styles.container}>
       <Text>Hello React Native</Text>
+      <Text>{data1}</Text>
+      <Text>{data2}</Text>
     </View>
   );
 }
