@@ -7,7 +7,6 @@ import {
     TouchableWithoutFeedback,
     Keyboard
 } from "react-native";
-import App from '../App';
 import { TextInput } from 'react-native-gesture-handler';
 
 export default function TouchWithoutFeedbackAndDismissKeyboard() {

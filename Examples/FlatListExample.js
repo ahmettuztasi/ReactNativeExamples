@@ -26,6 +26,17 @@ export default function FlatListExample() {
 
             <FlatList
                 //numColumns={2}
+                horizontal
+                keyExtractor={(item) => item.key}
+                data={fruits}
+                renderItem={({ item }) =>
+                    <Text style={styles.item}>{item.name}</Text>
+                }
+            />
+
+            <FlatList
+                //numColumns={2}
+                marginTop={10}
                 keyExtractor={(item) => item.key}
                 data={fruits}
                 renderItem={({ item }) =>
@@ -39,6 +50,7 @@ export default function FlatListExample() {
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -62,7 +74,8 @@ const styles = StyleSheet.create({
     item: {
         marginTop: 0,
         padding: 30,
-        width: 150,
+        width: 180,
+        height: 120,
         backgroundColor: 'pink',
         fontSize: 24,
         marginLeft: 10,
