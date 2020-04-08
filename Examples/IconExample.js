@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import {
     AppRegistry,
     View,
-    StyleSheet,
     Text,
 } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {GlobalStyles} from './GlobalStyles';
 
 //TERMMINAL COMMANDS
 //$npm install react-native-vector-icons --save
@@ -21,8 +21,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function IconExample() {
     return (
-        <View style={styles.container}>
-            <Text style={styles.text}>**Icon Example**</Text>
+        <View style={GlobalStyles.container}>
+            <Text style={GlobalStyles.text}>**Icon Example**</Text>
             <Icon name="home" size={30} color="#900" />
             <Icon name="rocket" size={30} color="#900" />
             <Icon name="backward" size={30} color="#900" />
@@ -31,16 +31,4 @@ export default function IconExample() {
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        padding: 30,
-        marginTop: 20,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    text: {
-        marginTop:100,
-        padding:50
-    }
-});
 AppRegistry.registerComponent('IconExample', () => IconExample);
