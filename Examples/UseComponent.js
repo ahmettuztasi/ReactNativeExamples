@@ -8,7 +8,6 @@ import {
 import App from '../App';
 
 export default function UseComponent() {
-    const data = 'Use Component';
     return (
         <View style={styles.container}>
             <Text style={styles.text}>**Using Component Example**</Text>
