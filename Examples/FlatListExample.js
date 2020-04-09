@@ -24,10 +24,16 @@ export default function FlatListExample({ navigation }) {
         { name: 'pineapple', key: '7' },
         { name: 'strawberry', key: '8' },
     ])
+
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>*********FlatList Example*********</Text>
+            <Text style={styles.text}>*********Passing Data Example*****</Text>
+            <Text>{navigation.getParam('name')}</Text>
+
             <Button title='go back IconExample Screen' onPress={pressHandler} />
+
+
+            <Text style={styles.text}>*********FlatList Example*********</Text>
             <FlatList
                 //numColumns={2}
                 horizontal

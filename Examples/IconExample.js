@@ -22,9 +22,11 @@ import { GlobalStyles } from './GlobalStyles';
 
 export default function IconExample({ navigation }) {
 
+    const fruit = { name: 'APPLE', key: '1' };
+
     const pressHandler = () => {
         //navigation.navigate('FlatListExample')
-        navigation.push('FlatListExample');
+        navigation.push('FlatListExample', fruit);
     }
 
     return (
