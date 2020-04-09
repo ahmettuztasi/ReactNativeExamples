@@ -4,10 +4,15 @@ import {
     View,
     Text,
     StyleSheet,
+    Button
 } from "react-native";
 import { FlatList } from 'react-native-gesture-handler';
 
-export default function FlatListExample() {
+export default function FlatListExample({ navigation }) {
+
+    const pressHandler = () => {
+        navigation.goBack();
+    }
 
     const [fruits, setFruits] = useState([
         { name: 'apple', key: '1' },
@@ -22,7 +27,7 @@ export default function FlatListExample() {
     return (
         <View style={styles.container}>
             <Text style={styles.text}>*********FlatList Example*********</Text>
-
+            <Button title='go back IconExample Screen' onPress={pressHandler} />
             <FlatList
                 //numColumns={2}
                 horizontal
